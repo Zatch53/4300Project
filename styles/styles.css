@@ -270,11 +270,6 @@ transform: translate(-50%,-20%);
   /*End Home screen CSS: Aaron*/
 
   /* Night Data */
-  :root{
-    --calendar-border-color: #eee;
-    --background-color: #02074d;
-  }
-
   .body-flex-container_ND {
     display: flex;
     justify-content: space-between;
@@ -284,7 +279,7 @@ transform: translate(-50%,-20%);
   .aside-flex-container_ND {
     /* https://www.sciencealert.com/images/articles/processed/light-pollution-1_600.jpg */
     /* background-image: url('https://www.sciencealert.com/images/articles/processed/light-pollution-1_600.jpg'); */
-    background-color: var(--background-color);
+    background-color: #02074d;
     color: white;
     display: flex;
     justify-content: space-around;
@@ -298,7 +293,7 @@ transform: translate(-50%,-20%);
 
   .month_ND {
     padding: 1em .05em;
-    background: var(--background-color);
+    background: #02074d;
     text-align: center;
   }
 
@@ -327,7 +322,7 @@ transform: translate(-50%,-20%);
   .month_ND button {
     font-size: 30px;
     color: white;
-    background-color: var(--background-color) ;
+    background-color: #02074d ;
   }
 
   .weekdays_ND {
@@ -349,7 +344,7 @@ transform: translate(-50%,-20%);
   .daysClass_ND {
     margin: 0;
     padding: 10px 10px;
-    background: var(--calendar-border-color);
+    background: #eee;
   }
 
   .daysClass_ND li {
@@ -365,18 +360,18 @@ transform: translate(-50%,-20%);
     font-size: 50px;
     width: 100%;
     padding: 30px 0px;
-    color: var(--background-color);
+    color: #02074d;
     /* border-radius: 50%; */ /*circular*/
   }
 
   .blankBtn_ND {
-    background-color: var(--calendar-border-color);
+    background-color: #eee;
     border: 0px;
   }
 
   .active_ND > button {
     padding: 5px;
-    background-color: var(--background-color);
+    background-color: #02074d;
     color: white !important
   }
 
@@ -398,7 +393,7 @@ transform: translate(-50%,-20%);
   }
 
   .aside-flex-container_ND button {
-    background-color: var(--background-color);
+    background-color: #02074d;
     color: white;
     padding: 10px 10px;
   }
