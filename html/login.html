@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../scripts/LS-scripts.js"></script>
+    <title>Sign Up and Log In</title>
+  </head>
+  <body>
+    <div class="LS-hero">
+      <div class="LS-form-box">
+
+        <div class="LS-button-box">
+          <div id="LS-btn"></div>
+          <button type="button" class="LS-toggle-btn" onclick="shiftLeft()">Log In</button>
+          <button type="button" class="LS-toggle-btn" onclick="shiftRight()">Sign Up</button>
+        </div>
+
+        <form id="LS-login-form" class="LS-input-group">
+          <input id="LS-email-login" name="email" type="text" class="LS-input-field" placeholder="Email" required>
+          <input id="LS-password-login" name="passwd" type="text" class="LS-input-field" placeholder="Enter Password" required>
+          <input id="LS-checkbox-login" name="RP" type="checkbox" class="LS-check-box" value=""><span>Remember Password</span>
+          <button type="submit" class="LS-submit-btn" name="button" onclick="loginClick()">Log In</button>
+        </form>
+
+        <form id="LS-signup-form" class="LS-input-group">
+          <input id="LS-name-signup" name="name" type="text" class="LS-input-field" placeholder="Name" required>
+          <input id="LS-email-signup" name="email" type="email" class="LS-input-field" placeholder="Email" required>
+          <input id="LS-password-signup" name="passwd" type="text" class="LS-input-field" placeholder="Enter Password" required>
+          <input id="LS-password-check" name="passwd2" type="text" class="LS-input-field" placeholder="Enter Password Again" required>
+          <input id="LS-checkbox-signup" name="agree" type="checkbox" class="LS-check-box"><span id="LS-chbox-text">I agree to the terms and conditions</span>
+          <button type="submit" class="LS-submit-btn" name="button" onclick="signupClick()">Sign Up</button>
+        </form>
+
+      </div>
+    </div>
+  </body>
+</html>

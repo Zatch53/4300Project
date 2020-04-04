@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Nightly Data</title>
+      <link rel="stylesheet" href="../styles/styles.css">
+      <script src="../scripts/NightData.js"></script>
+
+      <style>
+        body {
+          font-family: Verdana, sans-serif;
+        }
+      </style>
+    </head>
+  <body class="body-flex-container_ND">
+
+    <main class="main-flex-container_ND">
+      <div class="month_ND">
+        <ul>
+          <li class="prev_ND"> <button id="prevBtn_ND"> &lt; </button></li>
+          <li class="next_ND"> <button id="nextBtn_ND"> &gt; </button></li>
+          <li id="monthName_ND"></li>
+        </ul>
+      </div>
+
+      <div class="weekdays_ND">
+        <ul>
+          <li>Sunday</li>
+          <li>Monday</li>
+          <li>Tuesday</li>
+          <li>Wednesday</li>
+          <li>Thursday</li>
+          <li>Friday</li>
+          <li>Saturday</li>
+        </ul>
+      </div>
+
+      <ul id="daysID_ND" class="daysClass_ND">
+      </ul>
+    </main>
+
+    <aside class="aside-flex-container_ND">
+        <div class="asideHeader_ND">
+          <p id="selected_ND"></p>
+          <p id="clock_ND"></p>
+        </div>
+
+        <div id="sleepDetails_ND">
+          <span id="sleepBar_ND"></span>
+          <div>
+            <p>DATABASE PART - IMPLEMENTATION IN SECOND ASSIGNMENT (sample below)</p>
+            <p id="bedtimeP_ND"> Bedtime: 23:03</p>
+            <p id="wakeupTimeP_ND"> Wake-Up Time: 7:49</p>
+            <p id="sleepAmountP_ND"> Amount of Sleep: 8 hours, 46 minutes</p>
+            <p id="notesP_ND">Notes from the Day Before:</p>
+            <ul id="notesList_ND">
+              <li> Ran 5k </li>
+              <li> Lunch with friends </li>
+              <li> Movie before bedtime </li>
+            </ul>
+            <p id="moodP_ND"> Mood upon Waking Up: Happy</p>
+          </div>
+        </div>
+
+        <div>
+
+        </div>
+
+        <div class="asideBtns_ND">
+          <button id="todayBtn_ND">Today</button>
+          <button id="homeBtn_ND">Home</button>
+          <button id="logBtn_ND" >Sleep</button>
+          <button id="aboutUsBtn_ND">About</button>
+        </div>
+    </aside>
+  </body>
+</html>

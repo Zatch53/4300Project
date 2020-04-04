@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Sleep tracking web application designed to provide feedback on sleep">
+        <meta name="keywords" content="Sleep tracker, Sleep logging, Sleep data">
+        <meta name="author" content="Aaron Xiao, Joanna Tolentino, Zach Cox">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <title>Home Page</title>
+     <style>
+        /* Sets background wallpaper for entire page*/
+        html {
+        background: url(../resources/city.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+     </style>
+    </head>
+
+    <body>
+    <!--Display for the quote in home page-->
+    <div class="H_container">
+        <img src="../resources/night2.jpg" style="width:100%;" class="Himg" alt="Quote bar background">
+        <div class ="H_centered">
+            <h1 style="color: white; font-size: 35px;" id="quoteDisplay"> .</h1>
+            <script src="../scripts/script.js"></script>
+        </div>
+    </div>
+     <!--Navigation bar along with buttons-->
+    <ul class="Hnavbar">
+        <li><button type="button" onclick="window.location.href='LogSleep\.html';">Log Sleep</button></li>
+        <li><button type="button" onclick="window.location.href='NightData\.html';">Nightly data</button></li>
+        <li style="float:right"><button type="button" onclick="window.location.href='AboutUs\.html';">About us!</button></li>
+    </ul>
+    <div style="width: 100%;">
+        <div class = "Hleft">
+    <!--Personal average sleep stat and overall average stat-->
+    <div id="H_ResultField">
+        <br><br>
+        <button class="Hbutton" onclick="HfunCompare()" id="Hcompare">Compare</button>
+        <br><br>
+        <!--Table showing user Avg stats-->
+        <p style="color: white; background-color: black; font-size: 20px;">User Average Sleep Stats</p>
+        <table class="Hmystat">
+           <tr>
+               <th>USER</th>
+               <th>AGE</th>
+               <th>Occupation</th>
+               <th>AVG Sleep (hrs/night)</th>
+               <th>Rating(out of 10)</th>
+           </tr>
+           <tr>
+               <td>Garfield</td>
+               <td>42</td>
+               <td>Cat</td>
+               <td>16</td>
+               <td>10</td>
+           </tr>
+            <!--Table showing overall Avg stats-->
+       </table>
+       <div class="HideAvgTable" id="HAVGtable">
+           <p style="color: white; background-color: black; font-size: 20px;">Average Sleep Stats based on all Users</p>
+           <table>
+               <tr>
+                   <th>USER</th>
+                   <th>AGE</th>
+                   <th>Occupation</th>
+                   <th>AVG Sleep (hrs/night)</th>
+                   <th>Rating(out of 10)</th>
+               </tr>
+               <tr>
+                   <td>Average</td>
+                   <td>20.2</td>
+                   <td> - </td>
+                   <td>10.5</td>
+                   <td>7.3</td>
+               </tr>
+           </table>
+       </div>
+       </div>
+        </div>
+        <div class ="Hright">
+           <!--Div for user profile info-->
+            <div class="Hprofile">
+                <h2>Personal profile</h2>
+                <p><b>Name: Garfield</b></p>
+                <p><b>Birth Date: 6/19/1978</b></p>
+                <p><b>AGE: 42</b></p>
+                <p><b>Occupation: Feline</b></p>
+                <p><b>Location: ???</b></p>
+            </div><br>
+        </div>
+    </div>
+
+    </body>
+</html>

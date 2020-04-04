@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About Us</title>
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script src="../scripts/AboutUs.js"></script>
+
+        <style>
+            * {
+                background-color: #02074d;
+                color: white;
+            }
+
+            body {
+                padding: 20px 20px;
+            }
+        </style>
+    </head>
+    <body class="bodyContainter_AU">
+        <header>
+            <ul class="navbar_AU">
+                <li><button type="button" id="logBtn_AU">Log Sleep</button></li>
+                <li><button type="button" id="dataBtn_AU">Nightly data</button></li>
+                <li><button type="button" id="homeBtn_AU">Home</button></li>
+            </ul>
+        </header>
+
+        <h1 id="pageHeader_AU">Meet the Team!</h1>
+        <div id="Aaron_AU">
+            <!--Aaron's image address data:image/jpeg;base64,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-->
+            <img id="AImg_AU" alt="Aaron" src="../resources/AaronPic.jpg">
+            <div>
+                <h2 id="AHeader_AU">Aaron</h2>
+                <p id="ABio_AU">
+                    Hello my name is Aaron and  I am a junior at UGA studying computer science.
+                    Interests and hobbies outside of coding include gaming, badminton, exercising and cooking.
+                    Fun fact I am very camera shy when it comes to taking pictures.
+                    For this project I took charge of designing and formatting of the home page for the website.
+                    Goal in mind when designing this webpage was to aid users to better view and record their sleep patterns so that they may learn and adjust them to have a better rested start to their day.
+                </p>
+            </div>
+        </div>
+
+        <div id="Joanna_AU">
+            <!--Joanna's image address file:///C:/Users/joann/OneDrive/Desktop/UGA/2020%20Spring/CSCI%204300/Project/GroupProject/Joanna.JPG-->
+            <img id="JImg_AU" alt="Joanna" src="../resources/JoannaPic.JPG">
+            <div>
+                <h2 id="JHeader_AU">Joanna</h2>
+                <p id="JBio_AU">
+                    Joanna is a second year undergraduate student studying Computer Science.
+                    Her hobbies include hiking, cycling, backpacking, road-tripping, and spending time with friends and family.
+                    Athens has been her home since August 2018, but she was born in the Philippines and raised in Cobb County Georgia.
+                    Her love for Computer Science began in high school, and this project was fueled by her interest in public health and specifically sleep health.
+                    With regards to this project, she designed the calendar page and this page featuring the team!
+                </p>
+            </div>
+        </div>
+
+        <div id="Zach_AU">
+            <!--Zach's image address https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS_NKmUHzCc9YXl_YO05C8fQKya2ztxEL5Odifw7YiM_LBggkgQ-->
+            <img id="ZImg_AU" alt="Zach" src="../resources/ZachPic.png">
+            <div>
+                <h2 id="ZHeader_AU">Zach</h2>
+                <p id="ZBio_AU">
+                  Hi. My name is Zach and I'm a senior at UGA studying computer science.
+                  I was born in Blue Ridge, GA and I lived there until I moved to Athens to attend UGA.
+                  My hobbies include playing video games, programming, reading, and skateboarding. For this project I designed the login page and the log sleep page.
+                  After I graduate I will be heading to Atlanta to work at AT&T, and with a bit of luck I'll get my masters degree within the next few years.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

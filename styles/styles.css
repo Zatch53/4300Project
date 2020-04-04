@@ -1,0 +1,493 @@
+/*
+Login/Signup Page
+Author: Zachary Cox
+Date: 3 April 2020
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+.LS-hero {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../resources/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.LS-form-box {
+  width: 500px;
+  height: 600px;
+  position: relative;
+  margin: 6% auto;
+  background: #fff;
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.LS-button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+}
+
+.LS-toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  font-size: 10pt;
+}
+
+#LS-btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 110px;
+  background: linear-gradient(to right, #8A2387, #E94057, #F27121);
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.LS-input-group {
+  top: 180px;
+  position: absolute;
+  width: 350px;
+  transition: 0.5s;
+}
+
+.LS-input-field {
+  width: 100%;
+  height: 35px;
+  padding: 10px 0px;
+  margin: 5px 0px;
+  border: 0px;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+  font-size: 15pt;
+}
+
+.LS-submit-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #8A2387, #E94057, #F27121);
+  border: 0px;
+  outline: none;
+  border-radius: 30px;
+  font-size: 12pt;
+}
+
+.LS-check-box {
+  margin: 30px 10px 30px 0px;
+}
+
+#LS-chbox-text {
+  color: #777;
+  font-size: 12px;
+  bottom: 65px;
+  position: absolute;
+}
+
+#LS-login-form {
+  left: 75px;
+}
+
+#LS-signup-form {
+  left: 550px;
+}
+/* End Login/Signup Page */
+
+/*
+Log Sleep Page
+Author: Zachary Cox
+Date: 3 April 2020
+*/
+
+.LOG-input-group {
+  top: 100px;
+  position: absolute;
+  width: 350px;
+  transition: 0.5s;
+  left: 75px;
+}
+
+.LOG-submit-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #8A2387, #E94057, #F27121);
+  border: 0px;
+  outline: none;
+  border-radius: 30px;
+  font-size: 12pt;
+}
+
+#log-h1 {
+  margin: 30px auto;
+  text-align: center;
+}
+/* End Log Sleep Page */
+
+/* Home screen: Aaron
+  all classes belonging to home screen begin with H
+  */
+ /* styles quote bar*/
+.H_container{
+    position: relative;
+    text-align: center;
+    top:30%;
+}
+/*Adjusts quote bar background height*/
+img.Himg{
+  height:250px;
+}
+/*position of quote in quote bar*/
+.H_centered{
+position: absolute;
+left:50%;
+top:20%;
+transform: translate(-50%,-20%);
+}
+
+/*navigation bar styling*/
+  ul.Hnavbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: sticky;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    width: 100%;
+  }
+  .Hnavbar li{
+    float: left;
+
+  }
+  .Hnavbar button{
+    border-radius: 100rem;
+    padding: 1rem;
+    font-family: 'Avenir Next';
+    font-size: 1.2rem;
+    padding: .5rem 4rem;
+    color: white;
+    box-shadow: 0 0 6px 0 rgba(183, 131, 228, 0.5);
+    border: solid 4px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px black inset;
+
+  }
+  .Hnavbar button:hover{
+    box-shadow: none;
+    color: white;
+  }
+  /* color of profile text*/
+  .Hprofile{
+    width: 60%;
+    padding: 1rem;
+    color: white;
+    text-shadow: 2px 2px purple;
+    border-width: 3px;
+    border-style: solid;
+    border-image:
+      linear-gradient(
+        to bottom,
+        purple,
+        rgba(0, 0, 0, 0)
+      ) 1 100%;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 100px;
+    padding: 20px;
+  }
+  table.Hmystat, .HideAvgTable table{
+      width: 77%;
+  }
+
+  /*styles tables showing personal avg and overall avg*/
+    table.Hmystat, .Hmystat td, .Hmystat th,
+   .HideAvgTable td, .HideAvgTable th, .HideAvgTable table{
+    border-bottom: 6px solid indigo;
+    border-radius: 15px;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-color:darkmagenta;
+  }
+  /* Makes overall avg table hidden unless button is clicked on*/
+ .HideAvgTable{
+    display: none;
+
+  }
+
+  /* Compare butoon*/
+  .Hbutton{
+    background-color: transparent;
+    border: 4px solid antiquewhite;
+    border-radius: 10em;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+ .Hleft{
+  width: 60%; height: 100px; float: left;
+  margin-left: 20px;
+ }
+ .Hright{
+  width:40%; height: 100px; float: right;
+ }
+  /*End Home screen CSS: Aaron*/
+
+  /* Night Data */
+  :root{
+    --calendar-border-color: #eee;
+    --background-color: #02074d;
+  }
+
+  .body-flex-container_ND {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .aside-flex-container_ND {
+    /* https://www.sciencealert.com/images/articles/processed/light-pollution-1_600.jpg */
+    /* background-image: url('https://www.sciencealert.com/images/articles/processed/light-pollution-1_600.jpg'); */
+    background-color: var(--background-color);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex: 0 0 22%;
+  }
+
+  .month_ND ul, ul.daysClass_ND, ul.weekdays_ND {
+    list-style-type: none;
+  }
+
+  .month_ND {
+    padding: 1em .05em;
+    background: var(--background-color);
+    text-align: center;
+  }
+
+  .month_ND ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .month_ND ul li {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .month_ND .prev_ND {
+    float: left;
+    padding-left: 1em;
+  }
+
+  .month_ND .next_ND {
+    float: right;
+    padding-right: 1em;
+  }
+
+  .month_ND button {
+    font-size: 30px;
+    color: white;
+    background-color: var(--background-color) ;
+  }
+
+  .weekdays_ND {
+    margin: 0px 0px;
+    padding: 10px 0px;
+    background-color: #ddd;
+  }
+
+  .weekdays_ND li {
+    display: inline-block;
+    width: 13.5%;
+    color: #666;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
+
+  .daysClass_ND {
+    margin: 0;
+    padding: 10px 10px;
+    background: var(--calendar-border-color);
+  }
+
+  .daysClass_ND li {
+    list-style-type: none;
+    display: inline-block;
+    width: 14.28%;
+    text-align: center;
+    font-size:12px;
+    color: #777;
+  }
+
+  .daysClass_ND li button {
+    font-size: 50px;
+    width: 100%;
+    padding: 30px 0px;
+    color: var(--background-color);
+    /* border-radius: 50%; */ /*circular*/
+  }
+
+  .blankBtn_ND {
+    background-color: var(--calendar-border-color);
+    border: 0px;
+  }
+
+  .active_ND > button {
+    padding: 5px;
+    background-color: var(--background-color);
+    color: white !important
+  }
+
+  #clock_ND {
+    color: white;
+    font-size: 40px;
+  }
+
+  #selected_ND {
+    font-size: 25px;
+  }
+
+  #sleepDetails_ND {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px;
+  }
+
+  .aside-flex-container_ND button {
+    background-color: var(--background-color);
+    color: white;
+    padding: 10px 10px;
+  }
+
+  .asideBtns_ND {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .asideBtns_ND button:hover, .prev_ND button:hover, .next_ND button:hover {
+    background-color: gray;
+  }
+
+  .asideHeader_ND {
+    text-align: center;
+    vertical-align: center;
+    letter-spacing: 3px;
+  }
+  /* End Night Data */
+
+  /* About Us */
+  .bodyContainer_AU {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  #pageHeader_AU {
+      text-align: center;
+      font-size: 40px;
+      letter-spacing: 2px;
+  }
+
+  .bodyContainer_AU h2 {
+      margin: 0;
+      padding: 20px 0px 10px 20px;
+      font-size: 30px;
+  }
+
+  #Aaron_AU, #Joanna_AU, #Zach_AU {
+      display: flex;
+      flex-direction: row;
+  }
+
+  #Aaron_AU > div, #Joanna_AU > div, #Zach_AU > div {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+  }
+
+  #AImg_AU, #JImg_AU, #ZImg_AU {
+      width: 150px;
+      height: 150px;
+      padding: 20px 20px;
+  }
+
+  .bodyContainer_AU p {
+      margin: 0px;
+      padding-left: 20px;
+      width: 1000px;
+      font-size: 18px;
+  }
+
+  ul.navbar_AU {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #02074d;
+      position: sticky;
+      top: 0;
+      left: 5px;
+      right: 5px;
+      width: 100%;
+  }
+  .navbar_AU li {
+      float: left;
+      border-right: 1px solid white;
+  }
+  .navbar_AU button {
+      display: block;
+      background-color: #02074d;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration:none ;
+  }
+  .navbar_AU button:hover {
+      background-color: gray;
+  }
+  /* End About Us  */
